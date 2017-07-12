@@ -70,7 +70,7 @@ if [[ "$OS" = 'debian' ]]; then
 	apt-get update
 	apt-get install openvpn iptables openssl ca-certificates -y
 # install some more tools i consider to be useful
-        apt-get install fail2ban haveged ntp unzip
+        apt-get install -y fail2ban haveged ntp unzip
 else
 	# distro is CentOS
 	yum install epel-release -y
